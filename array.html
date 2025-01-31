@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moral Panic</title>
+  </head>
+  <body>
+    <h2>Moral Panic | Album by NOTHING BUT THIEVES</h2>
+    <ul id="playlist"></ul>
+    <script>
+      const playlist = document.querySelector("#playlist");
+      const songArray = [
+        "Unperson",
+        "Futureproof",
+        "Is Everybody Going Crazy",
+        "Free If We Want It",
+        "Miracle, Baby",
+        "Impossible",
+        "If I Were You",
+        "There Was Sun",
+        "Can You Afford To Be An Individual",
+        "Phobia",
+        "Before We Drift Away",
+        "Ce n'est Rien",
+        "Moral Panic",
+        "Real Love Song",
+        "This Feels Like The End",
+        "Your Blood",
+      ];
+
+      function outputList() {
+        const song = songArray.map((title) => `<li>${title}</li>`).join(``);
+        playlist.innerHTML = song;
+      }
+
+      outputList();
+    </script>
+  </body>
+</html>
