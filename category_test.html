@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category Test</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      const catArray = ["Bottoms", "Outerwear", "Underwear", "Accessories"];
+
+      const catName = catArray
+        .map((category) => `<li>${category}</li>`)
+        .join("");
+
+      document.querySelector("ul").innerHTML = catName;
+    </script>
+  </body>
+</html>
