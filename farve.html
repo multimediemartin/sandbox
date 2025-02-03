@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farve | URL PARAMETRE</title>
+  </head>
+  <body style="background-color: blue; height: 90vh">
+    <h2
+      style="
+        font-size: 6rem;
+        color: white;
+        font-weight: 800;
+        margin: 20cqw 0;
+        place-self: center;
+      "
+    ></h2>
+    <script>
+      const queryString = window.location.search;
+
+      const ulrParams = new URLSearchParams(queryString);
+
+      const farve = ulrParams.get("farve");
+
+      console.log(farve);
+
+      document.querySelector("h2").textContent = farve;
+
+      // Shorthand
+      // const farve = new URLSearchParams(window.location.search).get;
+    </script>
+  </body>
+</html>
